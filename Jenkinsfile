@@ -8,7 +8,8 @@ pipeline {
 				sh './gradlew build --no-daemon'
 				archiveArtifacts artifacts: 'dist/trainSchedule.zip'
 			}
-		stage('Deploytostaging) {
+		stage('Deploytostaging') 
+			{
 		      if branch master
 		      {
 			      steps
