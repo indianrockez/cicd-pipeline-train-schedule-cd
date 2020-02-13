@@ -10,8 +10,9 @@ pipeline {
 			}
 		stage('Deploytostaging') 
 			{
-		      if branch ('master')
-		      {
+				if {
+			      branch 'master'
+				}
 			      steps
 			      {
 				  echo 'Projectdelopyment'
