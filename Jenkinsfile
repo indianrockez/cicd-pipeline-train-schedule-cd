@@ -6,7 +6,7 @@ pipeline {
 			steps{
 				echo 'Project autodeployment is started'
 				sh './gradlew build --no-daemon'
-				archiveArtifacts artifacts: 'dist/trainschedule.zip'
+				archiveArtifacts artifacts: 'dist/trainSchedule.zip'
 			}
 		}
 	}
